@@ -4,9 +4,9 @@ class AnswersController < ApplicationController
 
     respond_to do |format|
 
-    format.html # index.html.erb
-    format.json { render json: @answers }
+      format.html # index.html.erb
+      format.json { render json: @answers }
 
-   end
+    end
   end
 end

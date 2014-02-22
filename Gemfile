@@ -11,8 +11,9 @@ gem 'devise'
 gem 'figaro'
 gem 'foundation-rails', '5.0.3.1'
 gem 'pg'
-gem 'sqlite3'
+gem "backbone-on-rails", "~> 1.1.1.0"
 group :development do
+  gem 'sqlite3'
   gem 'hirb'
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_19, :mri_20, :rbx]
