@@ -1,6 +1,85 @@
-<h3>Home</h3>
-<% @users.each do |user| %>
-  <p>User: <%=link_to user.email, user %></p>
-<% end %>
+<div class="splash-image">
+	<div class="header-space"></div>
+	
+	<div class="logo-box">
+		<div class="text">
+			<h1><%=image_tag "logo-home.png", :class => "logo"%></h1>
+			<p>FREE ONLINE SAT PREP</p>
+		</div>
+	</div>
 
-<!-- Small change -->
+	<div class="footer-box"></div>
+</div>
+
+<div class="splash-video">
+	<br>
+	
+	<div class="large-6 columns large-offset-1">
+		<div class="flowplayer">
+	   <video>
+	      <source type="video/mp4"  src="http://video-js.zencoder.com/oceans-clip.mp4">
+	   </video>
+		</div>
+	</div>
+
+	<div class="large-5 columns">
+		<div class="title">
+			<h1>ABOUT</h1>
+			<hr>
+		</div>
+		
+		<p>Prepify is some awesome mutherfuckin' shit. You be all like "I don't get the SAT" and we're all like "That's cuz your a bitch" but POW and we make you awesome.</p>
+		<p>Yeah, mutherfuckin' shit. You be all like "I don't get the SAT" and we're all like "That's cuz your a bitch" but POW and we make you awesome.</p>
+	</div>
+
+</div>
+
+<div class="profile-container">
+	<div class="title">
+		<h1>TOP PREPPERS</h1>
+		<hr>
+		<p>Hey! Looka here at all these bright young minds, give 'em some bitcoin blah blah lorem ipsum ere at all these bright young minds, give 'em some bitcoin blah blah lorem ipsum blah blah. blah blah lorem ipsum blah blah. Hey! Looka here at all these bright young minds, give 'em some bitcoin blah blah lorem ipsum blah blah.</p>
+	</div>
+	
+	<div class="profiles">
+		<div class="large-4 columns">
+			<div class="student-container"><%=image_tag "student1-square.jpg", :class => "student"%>
+				<p class="name" style="margin-top:20px">THOMAS LEE</p>
+				<p class="high-school">TURNER HIGH SCHOOL</p>
+				<p class="city">WASHINGTON, DC</p>
+				<br>
+				<p class="quote">"I see myself attending Yale to study computer science"</p>
+			</div>
+		</div>
+
+		<div class="large-4 columns">
+			<div class="student-container"><%=image_tag "student2-square.jpg", :class => "student"%></div>
+			<p class="name" style="margin-top:20px">LUCY GARCIA</p>
+			<p class="high-school">SAN BENITO HIGH SCHOOL</p>
+			<p class="city">HARLINGEN, TEXAS</p>
+			<br>
+			<p class="quote">"I've always wanted to go to Stanford"</p>
+		</div>
+
+		<div class="large-4 columns">
+			<div class="student-container"><%=image_tag "student3-square.jpg", :class => "student"%></div>
+			<p class="name" style="margin-top:20px">JESSICA WOODS</p>
+			<p class="high-school">MADISON HIGH SCHOOL</p>
+			<p class="city">BROOKLYN, NEW YORK</p>
+			<br>
+			<p class="quote">"I don't want to leave the city, so why not go to NYU?"</p>
+		</div>
+
+		
+	
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
