@@ -6,20 +6,35 @@ body {
 	margin: 0px;
 }
 
-.splash_image, .splash_video, .profiles, .team {
+.splash-image, .splash-video, .profiles, .team {
 	width: 100%;
 	margin: 0px;
 }
 
-.splash_image {
+.splash-image {
 	height: 500px;
 	background-image: url(image-path('scantron.png'));
 	background-size: cover;
 }
 
-.splash_video {
-	height:500px;
+.splash-video {
+	height:600px;
 	background-color: blue;
+	color:white;
+}
+
+.flex-video {
+	max-width: 600px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.flowplayer {
+	background-color: gray;
+}
+
+.caption {
+	margin-top: 25px;
 }
 
 .profiles {
