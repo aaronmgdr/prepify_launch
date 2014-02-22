@@ -1,0 +1,38 @@
+main {
+	padding: 0px;
+}
+
+body {
+	margin: 0px;
+}
+
+.splash_image, .splash_video, .profiles, .team {
+	width: 100%;
+	margin: 0px;
+}
+
+.splash_image {
+	height: 500px;
+	background-image: url(image-path('scantron.png'));
+	background-size: cover;
+}
+
+.splash_video {
+	height:500px;
+	background-color: blue;
+}
+
+.profiles {
+	height:250px;
+	background-color: yellow;
+}
+
+.team {
+	height: 100px;
+	background: green;
+}
+
+.news {
+	height: 300px;
+	background-color: white;
+}
