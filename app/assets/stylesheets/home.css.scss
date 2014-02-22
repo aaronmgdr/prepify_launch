@@ -6,48 +6,45 @@ body {
 	margin: 0px;
 }
 
-.splash-image, .splash-video, .profiles, .team {
+.splash-image, .splash-video, .profiles {
 	width: 100%;
 	margin: 0px;
 }
 
 .splash-image {
 	height: 500px;
-	background-image: url(image-path('scantron.png'));
+	width: 100%;
+	background-image: url(image-path('new-bckgd.png'));
 	background-size: cover;
 }
 
 .splash-video {
+	padding-top: 5%;
 	height:600px;
 	background-color: blue;
 	color:white;
+
+	.title {
+		margin-top: 0px;
+	}
+
+	.flowplayer {
+		background-color: gray;
+	}
+
+	.caption {
+		margin: 100px 50px 25px 50px;
+	}
+
 }
 
-.flex-video {
-	max-width: 600px;
-	margin-right: auto;
-	margin-left: auto;
-}
-
-.flowplayer {
-	background-color: gray;
-}
-
-.caption {
-	margin-top: 25px;
-}
 
 .profiles {
 	height:250px;
 	background-color: yellow;
-}
 
-.team {
-	height: 100px;
-	background: green;
-}
+	.student {
+		width:33%
+	}
 
-.news {
-	height: 300px;
-	background-color: white;
 }
