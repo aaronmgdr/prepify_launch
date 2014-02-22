@@ -1,6 +1,8 @@
 $blue-accent: #31a8ac;
 $home-background: #f2f2f2;
 $light-blue: lighten($blue-accent, 20%);
+$dark-blue: darken($blue-accent, 30%);
+$paragraph-font: "Avenir";
 
 //global homepage styles
 
@@ -107,11 +109,9 @@ hr {
 		background-color: gray;
 	}
 
-	.caption {
-		margin: 25px;
-	}
-
 	p {
+		margin: 25px;
+		font-family: $paragraph-font;
 		color:black;
 	}
 
@@ -129,7 +129,8 @@ hr {
 	}
 
 	p {
-		color:black;
+		color: $dark-blue;
+		font-family: $paragraph-font;
 		margin-top: 20px;
 		width: 60%;
 		margin-right: auto;
