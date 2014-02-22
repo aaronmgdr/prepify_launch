@@ -4,7 +4,7 @@ $light-blue: lighten($blue-accent, 20%);
 $dark-blue: darken($blue-accent, 30%);
 $paragraph-font: "Avenir";
 
-//global homepage styles
+//global styles
 
 main {
 	padding: 0px;
@@ -17,6 +17,7 @@ body {
 
 h1 {
 	color: $blue-accent;
+	font-family: $paragraph-font;
 }
 
 p {
@@ -175,7 +176,9 @@ hr {
 
 		.quote {
 			color: $blue-accent;
-			font-size: .80em;
+			font-size: 1em;
+			margin-bottom: 20px;
+			margin-top: 20px;
 		}
 
 	}
