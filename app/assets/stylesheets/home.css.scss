@@ -14,8 +14,48 @@ body {
 .splash-image {
 	height: 500px;
 	width: 100%;
-	background-image: url(image-path('new-bckgd.png'));
+	background: url(image-path('updated-bckgd.png')) no-repeat center center;
 	background-size: cover;
+
+	.header-space {
+		height:100px
+	}
+
+	.logo-box {
+		height: 225px;
+		width:	350px;
+		margin-left: auto;
+		margin-right: auto;
+		text-align: center;
+		color:white;
+		border: 1px solid white;
+		vertical-align: middle;
+
+			.text {
+				margin: 50px;
+
+				h1 {
+					color:white;
+				}
+
+				p {
+					color:white;
+					font-size: 1.25em;
+					position: relative;
+				}
+
+			}
+
+	}
+
+	.footer-box {
+		border: 1px solid white;
+		width: 400px;
+		height:20px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
 }
 
 .splash-video {
@@ -41,10 +81,21 @@ body {
 
 .profiles {
 	height:250px;
+	margin-left: 5%;
+	margin-right: 5%;
 	background-color: yellow;
 
+	.student-container {
+		display: inline;
+	}
+
 	.student {
-		width:33%
+		width: 30%;
 	}
 
 }
+
+
+
+
+
