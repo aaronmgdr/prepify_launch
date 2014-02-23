@@ -13,17 +13,28 @@
         <ol class="questions">
           <li id="answer_{{answers[0].id}}">
             <div class="answer_value">{{answers[0].value}}</div>
-            <div class="insert_here"></div>
+            <div></div>
           </li>
         </ol>
       </div>
     </div>
   </script>
   <script class="onGuessed" type="text/template">
+    <div class="opened">
+      <h3>WHOOPS/GOODJOB</h3>
+      <a class="show_reason">Explain Why</a>
+      <a class="button retry">Try Again</a>
+    </div>
   </script>
+
 </div>
+
+
 
 <script>
   var questionTemplateHtml = $('#templates .question').html();
   var questionTemplate = _.template(questionTemplateHtml);
+  //
+  var guessTemplateHtml = $('#templates .onGuessed').html();
+  var guessTemplate = _.template(guessTemplateHtml);
 </script>
