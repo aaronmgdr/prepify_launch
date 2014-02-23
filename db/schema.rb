@@ -54,9 +54,9 @@ ActiveRecord::Schema.define(version: 20140222182955) do
     t.datetime "updated_at"
   end
 
-  add_index "results", ["answer_id"], name: "index_results_on_answer_id", using: :btree
-  add_index "results", ["question_id"], name: "index_results_on_question_id", using: :btree
-  add_index "results", ["user_id"], name: "index_results_on_user_id", using: :btree
+  add_index "results", ["answer_id"], name: "index_results_on_answer_id"
+  add_index "results", ["question_id"], name: "index_results_on_question_id"
+  add_index "results", ["user_id"], name: "index_results_on_user_id"
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
