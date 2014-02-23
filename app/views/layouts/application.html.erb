@@ -19,13 +19,18 @@
 
   </head>
   <body>
-    <header>
-      <%= render 'layouts/navigation' %>
-    </header>
-    <main role="main">
-       <%= render 'layouts/messages' %>
-       <%= yield %>
+    <div class="main-container">
+      <header>
+        <%= render 'layouts/navigation' %>
+      </header>
+      <main role="main">
+         <%= render 'layouts/messages' %>
+         <%= yield %>
+      </main>
+      <div id="push"></div>
+    </div>
+    <div class="footer-container">
        <%= render 'layouts/bottom_bar' %>
-    </main>
+    </div>
   </body>
 </html>
