@@ -26,12 +26,12 @@ Prepify.Views.Question = Backbone.View.extend({
     
     if (ans_obj.correct) {
       button_text = "Next";
-      exclamation = 'Correct!'
+      exclamation = 'Correct'
     } else {
       button_text = "Try Again"
-      exclamation = 'Whoops!' 
+      exclamation = 'Whoops' 
     }
-    
+    $(e.currentTarget).toggleClass('clicked')
     var newGuessHtml = guessTemplate({exclamation: exclamation, button_text:button_text, correctness: ans_obj.correct});
     
     if ($(e.currentTarget).children().is(':empty')) {
