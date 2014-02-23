@@ -1,13 +1,11 @@
 <div id='question'>
-
+  
 </div>
-
-
 <!-- Backbone templaltes for ajaxy rendering -->
 <div id="templates">
   <script class="question" type="text/template">
     <div class="row">
-      <div class="columns small-12 medium-8 large-6 centered-small"
+      <div class="columns small-12 medium-8 large-6 centered-small">
         <p>{{description}}</p>
         <p>{{equation}}</p>
         <ol class="questions">
@@ -41,8 +39,4 @@
   var guessTemplateHtml = $('#templates .onGuessed').html();
   var guessTemplate = _.template(guessTemplateHtml);
   // insert first question
-  $( document ).ready(function() {
-        insertQuestion(1,false)
-    });
- 
 </script>
