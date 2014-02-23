@@ -32,6 +32,12 @@ two = Answer.create(value:"4", correct: false, explaination: "Nope, sorry")
 three = Answer.create(value:"5", correct: false, explaination: "Nope, sorry")
 four = Answer.create(value:"10", correct: false, explaination: "Nope, sorry")
 
+one.question_id = q.id
+two.question_id = q.id
+three.question_id = q.id
+four.question_id = q.id
+
+
 one.save
 two.save
 three.save
