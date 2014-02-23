@@ -1,3 +1,7 @@
+<%= content_for :javascripts do %>
+  <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
+<% end %>
+
 <div class="splash-image">
 	<div class="header-space"></div>
 	
@@ -9,17 +13,31 @@
 	</div>
 
 	<div class="footer-box"></div>
+	
+
+  <div class="signup-form">
+    <div class="row collapse">
+      <div class="small-10 columns">
+        <input type="text" placeholder="Sign up now to start practicing">
+      </div>
+      <div class="small-2 columns">
+        <a href="#" class="button round postfix">Go!</a>
+      </div>
+    </div>
+	</div>
+
 </div>
 
 <div class="splash-video">
 	<br>
 	
 	<div class="large-6 columns large-offset-1">
-		<div class="flowplayer">
-	   <video>
+		<div class="player" data-ratio="0.4167">
+	   <video preload="none">
 	      <source type="video/mp4"  src="http://video-js.zencoder.com/oceans-clip.mp4">
 	   </video>
 		</div>
+
 	</div>
 
 	<div class="large-5 columns">
@@ -28,17 +46,25 @@
 			<hr>
 		</div>
 		
-		<p>Prepify is some awesome mutherfuckin' shit. You be all like "I don't get the SAT" and we're all like "That's cuz your a bitch" but POW and we make you awesome.</p>
-		<p>Yeah, mutherfuckin' shit. You be all like "I don't get the SAT" and we're all like "That's cuz your a bitch" but POW and we make you awesome.</p>
+		<p>Prepify is FREE, online, and computer-adaptive SAT prep for any
+		student - anywhere.</p>
+		<p>Our curriculum is designed by top instructors with experience teaching - and beating - the test.</p>
+		<p>In addition to providing an open platform for SAT prep, Prepify matches admissions counselors with top-flight test takers based on factors like the student's profile, interest, and past performance.</p>
+		<p>Prepify was founded by students at The University of Texas at Austin and MakerSquare, including alumni of Teach for America.</p>
 	</div>
 
 </div>
 
 <div class="profile-container">
 	<div class="title">
-		<h1>TOP PREPPERS</h1>
+		<h1>TOP PREPISTS</h1>
 		<hr>
-		<p>Hey! Looka here at all these bright young minds, give 'em some bitcoin blah blah lorem ipsum ere at all these bright young minds, give 'em some bitcoin blah blah lorem ipsum blah blah. blah blah lorem ipsum blah blah. Hey! Looka here at all these bright young minds, give 'em some bitcoin blah blah lorem ipsum blah blah.</p>
+		<p>Check out these profiles of top-performing students on the Prepify platform.</p>
+		<p>Want to make a difference?  Flip a Bitcoin to support these students'
+		college funds!</p>
+		<p>#PrepItForward</p>
+
+
 	</div>
 	
 	<div class="profiles">
@@ -48,7 +74,8 @@
 				<p class="high-school">TURNER HIGH SCHOOL</p>
 				<p class="city">WASHINGTON, DC</p>
 				<br>
-				<p class="quote">"I see myself attending Yale to study computer science"</p>
+				<p class="quote">"I see myself attending Yale to study computer science."</p>
+				<p><a href="#"><%= image_tag "bitcoin-button.png", :class => "bitcoin" %></a></p>
 			</div>
 		</div>
 
@@ -58,7 +85,8 @@
 			<p class="high-school">SAN BENITO HIGH SCHOOL</p>
 			<p class="city">HARLINGEN, TEXAS</p>
 			<br>
-			<p class="quote">"I've always wanted to go to Stanford"</p>
+			<p class="quote">"I've always wanted to go to Stanford."</p>
+			<p><a href="#"><%= image_tag "bitcoin-button.png", :class => "bitcoin" %></a></p>
 		</div>
 
 		<div class="large-4 columns">
@@ -68,12 +96,21 @@
 			<p class="city">BROOKLYN, NEW YORK</p>
 			<br>
 			<p class="quote">"I don't want to leave the city, so why not go to NYU?"</p>
+			<p><a href="#"><%= image_tag "bitcoin-button.png", :class => "bitcoin" %></a></p>
 		</div>
 
-		
-	
 	</div>
 </div>
+
+<script type="text/javascript">
+// run script after document is ready
+$(function () {
+ 
+   // install flowplayer to an element with CSS class "player"
+   $(".player").flowplayer();
+ 
+});
+</script>
 
 
 

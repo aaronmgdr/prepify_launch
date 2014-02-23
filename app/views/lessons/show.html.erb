@@ -1,0 +1,25 @@
+<div class="lesson">
+	<h1 class="lesson-title"><%= @lesson.name %></h1>
+	
+	<div class="large-6 columns">
+		<div class="player">
+	   <video preload="none">
+	      <source type="video/mp4"  src="http://video-js.zencoder.com/oceans-clip.mp4">
+	   </video>
+		</div>
+	</div>
+
+	<div class="large-5 large-offset-1 columns">
+		<p class="lesson-text"><%= @lesson.intro %></p>
+	</div>
+</div>
+
+<script type="text/javascript">
+// run script after document is ready
+$(function () {
+ 
+   // install flowplayer to an element with CSS class "player"
+   $(".player").flowplayer();
+ 
+});
+</script>
