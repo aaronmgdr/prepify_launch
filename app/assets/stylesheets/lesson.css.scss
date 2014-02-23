@@ -17,8 +17,8 @@ $dark-blue: darken($blue-accent, 30%);
 			margin-top: 15px;
 		}
 
-		.flowplayer {
-			background-color: gray;
+		.player {
+			background-color: $blue-accent;
 			margin-bottom: 50px;
 		}
 

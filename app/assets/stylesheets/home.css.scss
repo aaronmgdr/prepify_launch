@@ -114,15 +114,15 @@ hr {
 	border-bottom: 1px solid gray;
 	border-top: 20px solid $blue-accent;
 
-	.flowplayer {
-		background-color: gray;
-		margin-top: 50px;
-	}
-
 	p {
 		margin: 25px;
 		font-family: $paragraph-font;
 		color:black;
+	}
+
+	.player {
+		background-color: $blue-accent;
+		height: 300px;	
 	}
 
 }

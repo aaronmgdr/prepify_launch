@@ -1,3 +1,7 @@
+<%= content_for :javascripts do %>
+  <script src="//releases.flowplayer.org/5.4.6/flowplayer.min.js"></script>
+<% end %>
+
 <div class="splash-image">
 	<div class="header-space"></div>
 	
@@ -28,8 +32,8 @@
 	<br>
 	
 	<div class="large-6 columns large-offset-1">
-		<div class="flowplayer">
-	   <video>
+		<div class="player">
+	   <video preload="none">
 	      <source type="video/mp4"  src="http://video-js.zencoder.com/oceans-clip.mp4">
 	   </video>
 		</div>
@@ -96,6 +100,16 @@
 
 	</div>
 </div>
+
+<script type="text/javascript">
+// run script after document is ready
+$(function () {
+ 
+   // install flowplayer to an element with CSS class "player"
+   $(".player").flowplayer();
+ 
+});
+</script>
 
 
 
