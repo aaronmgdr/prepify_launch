@@ -11,10 +11,18 @@ $dark-blue: darken($blue-accent, 30%);
 	margin-bottom: 50px;
 	font-family: "Avenir";
 
+	.lesson-title {
+		font-family: "Avenir";
+		width: 250px;
+		margin-right: 25px;
+	}
+
 
 	.lesson-text {
 			color:$dark-blue;
 			margin-top: 15px;
+			width: 70%;
+			display:inline-block;
 		}
 
 		.player {
