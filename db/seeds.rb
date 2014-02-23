@@ -27,3 +27,13 @@ one = Answer.create(value:"3", correct: true, explaination: "You got it!")
 two = Answer.create(value:"4", correct: false, explaination: "You added it together, but I think yor're missing something")
 three = Answer.create(value:"5", correct: false, explaination: "Nope, sorry")
 four = Answer.create(value:"10", correct: false, explaination: "Nope, sorry")
+
+Question.all.each do |q|
+  q.lesson_id = a.id
+  q.save
+end
+
+Answer.all.each do |a|
+  a.question_id = q.id
+  a.save
+end

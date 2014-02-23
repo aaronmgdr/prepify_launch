@@ -4,13 +4,14 @@ this_lesson.fetch({success: function(){console.log('success'); insertQuestion(1,
 
 
 // determine which question to render next
-var insertQuestion = function(level, correct) {
-  if (correct) {
-   next_question = this_lesson.findWhere({level: level+1})
-  }
-  else {
-    next_question = this_lesson.findWhere({level: level})
-  }
+var insertQuestion = function(level, correct, q) {
+  // if (correct) {
+  //  next_question = this_lesson.findWhere({level: level+1})
+  // }
+  // else {
+  //   next_question = this_lesson.findWhere({level: level})
+  // }
+  next_question this_lesson.findWhere({level: level, id: q.id +1})
   //pass it to the View and render it 
   question_view = new Prepify.Views.Question({model:next_question}) //
   question_view.setElement($("#question")) 
