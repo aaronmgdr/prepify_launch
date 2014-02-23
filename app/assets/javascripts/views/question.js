@@ -1,7 +1,6 @@
 Prepify.Views.Question = Backbone.View.extend({
   initialize: function (options) {
-    current_answers = this.model.get('answers')
-    console.log("init model:" + current_answers)
+     current_answers = this.model.get('answers')
   },
   render: function () {
     var newQuestionHtml = questionTemplate(this.model.toJSON());
