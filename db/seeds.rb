@@ -23,3 +23,16 @@ g.save
 
 t = Lesson.create(name:"Test Prep", intro: "Think tests are all No. 2 pencils and uncomfortable desks? Ah, but they're so much more! Enter here to learn the strategy and psychology behind trumping the SAT", conclusion: "As a timed exam, the SAT doesn't just test your math skills or ability to endure endless scantrons - it also tests your awareness of shortcuts and basic probabilistic reasoning ('I don't know this - should I answer it?'). And just what shortcuts, tactics, and decisions should you be employing? Watch and find out.")
 t.save
+
+q = Question.create(equation:"2x + 4 = 10", level:1, description: "Solve for x")
+q.lesson_id = a
+
+one = Answer.create(value:"3", correct: true, explaination: "You got it!")
+two = Answer.create(value:"4", correct: false, explaination: "Nope, sorry")
+three = Answer.create(value:"5", correct: false, explaination: "Nope, sorry")
+four = Answer.create(value:"10", correct: false, explaination: "Nope, sorry")
+
+one.save
+two.save
+three.save
+four.save
