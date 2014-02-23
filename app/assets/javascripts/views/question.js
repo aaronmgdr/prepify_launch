@@ -38,7 +38,6 @@ Prepify.Views.Question = Backbone.View.extend({
     if ($(e.currentTarget).children().is(':empty')) {
       $(e.currentTarget).children().html(newGuessHtml)
     }
-
   },
   showReason: function(e) {
     console.log("reason_clicked")
@@ -51,5 +50,6 @@ Prepify.Views.Question = Backbone.View.extend({
   },
   nextQuestion: function(e) {
     console.log("next")
+    insertQuestion(1,false)
   }
 });

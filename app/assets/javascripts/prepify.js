@@ -13,7 +13,7 @@ window.Prepify = {
   Views: {},
   Routers: {},
   initialize: function() {
-    nextQuestion(1, false)
+    insertQuestion(1, false)
   }
 };
 
