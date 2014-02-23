@@ -11,12 +11,14 @@
 
 	<div class="large-5 large-offset-1 columns">
 		<p class="lesson-text"><%= @lesson.conclusion %></p>
+
+		<p href="<%= lesson_questions_path(@lesson.id)	%>" ></p>
 	</div>
 </div>
 
 <script type="text/javascript">
 // run script after document is ready
-$(function () {
+$(function () {	
  
    // install flowplayer to an element with CSS class "player"
    $(".player").flowplayer();
