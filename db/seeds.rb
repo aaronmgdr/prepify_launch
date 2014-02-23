@@ -21,5 +21,5 @@ and circumference of a circle, the Pythagorean Theorem, coordinate geometry, geo
 and right triangles. ")
 g.save
 
-t = Lesson.create(name:"Test Prep", intro: "Think tests are all No. 2 pencils and uncomfortable desks? Ah but they're so much more! Enter here to learn the strategy and psychology behind trumping the SAT", conclusion: "As a timed exam, the SAT doesn't just test your math skills or ability to endure endless scantrons - it also tests your awareness of shortcuts and basic probabilistic reasoning ('I don't know this - should I answer it?'). And just what shortcuts, tactics, and decisions should you be employing? I'm glad you asked.")
+t = Lesson.create(name:"Test Prep", intro: "Think tests are all No. 2 pencils and uncomfortable desks? Ah, but they're so much more! Enter here to learn the strategy and psychology behind trumping the SAT", conclusion: "As a timed exam, the SAT doesn't just test your math skills or ability to endure endless scantrons - it also tests your awareness of shortcuts and basic probabilistic reasoning ('I don't know this - should I answer it?'). And just what shortcuts, tactics, and decisions should you be employing? Watch and find out.")
 t.save
