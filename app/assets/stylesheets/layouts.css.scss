@@ -10,8 +10,18 @@
 .footer-links {
 	color:white;
 	float:left;
+
+	.links {
+		list-style-type: none;
+		margin-top: 50px;
+		margin-left: 25px;
+		font-family: "Avenir";
+		font-size: 1.15em;
+	}
+
 }
 
 .footer-logo {
 	float:left;
+	width: 300px;
 }
