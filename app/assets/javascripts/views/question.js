@@ -6,13 +6,13 @@ Prepify.Views.Question = Backbone.View.extend({
     var newQuestionHtml = questionTemplate(this.model.toJSON());
     // A view's el is a blank div (<div></div>) by default
     $("#question").html(newQuestionHtml);
-    this.delegateEvents()
+    this.delegateEvents(this.events)
   },
   events: {
     'click .answer_value' : 'onGuess',
     'click .show_reason'  : 'showReason',
     'click .retry'  : 'collapseAnswer',
-    'click .next'  : 'nextQuestion',
+    'click .next'  : 'nextQuestion'
 
   },
   onGuess: function (e) {
