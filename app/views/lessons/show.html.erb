@@ -9,19 +9,11 @@
 		</div>
 	</div>
 
+	<script type="text/javascript">$(".player").flowplayer();</script>
+
 	<div class="large-5 large-offset-1 columns">
 		<p class="lesson-text"><%= @lesson.conclusion %></p>
 
 		<a class="button" href="<%= lesson_questions_path(@lesson.id)	%>" >Take Quiz</a>
 	</div>
 </div>
-
-<script type="text/javascript">
-// run script after document is ready
-$(function () {	
- 
-   // install flowplayer to an element with CSS class "player"
-   $(".player").flowplayer();
- 
-});
-</script>
