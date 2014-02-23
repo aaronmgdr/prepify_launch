@@ -1,8 +1,6 @@
 // Get all the questions in a BB Collection
 var this_lesson = new Prepify.Collections.Questions
 this_lesson.fetch()
-
-
 // underscore template 
 
 // determine which question to render next
@@ -17,5 +15,6 @@ var nextQuestion = function(level, correct) {
   
   question_view = new Prepify.Views.Question({model:next_question}) //
   question_view.render()
+  question_view.delegateEvents()
 }
 
