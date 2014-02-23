@@ -95,6 +95,14 @@ hr {
 		margin-left: auto;
 	}
 
+	.signup-form {
+		width: 30%;
+		margin-top: 50px;
+		margin-right: auto;
+		margin-left: auto;
+	}
+
+
 }
 
 // video section
@@ -168,6 +176,7 @@ hr {
 			margin-right: auto;
 			margin-left: auto;
 			font-size: .80em;
+			font-family: $paragraph-font;
 		}
 
 		.high-school, .city {
