@@ -1,0 +1,15 @@
+<div class="lesson">
+	<h1 class="lesson-title"><%= @lesson.name %></h1>
+	
+	<div class="large-6 columns">
+		<div class="flowplayer">
+		   <video>
+		      <source type="video/mp4"  src="http://video-js.zencoder.com/oceans-clip.mp4">
+		   </video>
+		</div>
+	</div>
+
+	<div class="large-5 large-offset-1 columns">
+		<p class="lesson-text"><%= @lesson.intro %></p>
+	</div>
+</div>

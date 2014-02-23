@@ -9,10 +9,17 @@ $dark-blue: darken($blue-accent, 30%);
 	margin-left: 10%;
 	margin-top: 50px;
 	margin-bottom: 50px;
+	font-family: "Avenir";
+
 
 	.lesson-text {
-		color:$dark-blue;
-		margin-top: 15px;
+			color:$dark-blue;
+			margin-top: 15px;
+		}
+
+		.flowplayer {
+			background-color: gray;
+			margin-bottom: 50px;
 		}
 
 
