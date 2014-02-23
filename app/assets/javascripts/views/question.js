@@ -15,11 +15,13 @@ Prepify.Views.Question = Backbone.View.extend({
     'click .retry'  : 'collapseAnswer',
     'click .next'  : 'nextQuestion'
   },
-  onGuess: function (e) {
+  onGuess: function (e) {    
     console.log('guessed_click')
-    console.log($(e.currentTarget))
-  
-    $(e.currentTarget).next().html((guessTemplate))
+    
+    
+    var newGuessHtml = guessTemplate({exclamation: 'Correct!', button_text:"Next"});
+    $(e.currentTarget).children().html(newGuessHtml)
+    console.log($(e.currentTarget).next('.opened'))
   },
   showReason: function(e) {
     console.log("reason_clicked")

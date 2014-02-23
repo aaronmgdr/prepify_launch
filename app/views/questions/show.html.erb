@@ -11,20 +11,19 @@
         <p>{{description}}</p>
         <p>{{equation}}</p>
         <ol class="questions">
-          <li id="answer_{{answers[0].id}}">
-            <div class="answer_value">{{answers[0].value}}</div>
-            <div></div>
+          <li id="answer_{{answers[0].id}}" class="answer_value"> {{answers[0].value}}
+            <div class="opened"></div>
           </li>
         </ol>
       </div>
     </div>
   </script>
   <script class="onGuessed" type="text/template">
-    <div class="opened">
-      <h3>WHOOPS/GOODJOB</h3>
+    
+      <h3>{{exclamation}}</h3>
       <a class="show_reason">Explain Why</a>
-      <a class="button retry">Try Again</a>
-    </div>
+      <a class="button retry">{{button_text}}</a>
+
   </script>
 
 </div>
