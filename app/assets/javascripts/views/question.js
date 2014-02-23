@@ -14,8 +14,8 @@ Prepify.Views.Question = Backbone.View.extend({
   events: {
     'click .answer_value' : 'onGuess',
     'click .show_reason'  : 'showReason',
-    'click .retry'  : 'collapseAnswer',
-    'click .next'  : 'nextQuestion'
+    'click .button.false'  : 'collapseAnswer',
+    'click .button.true'  : 'nextQuestion'
   },
   onGuess: function (e) {
     console.log('guessed_click')
@@ -24,7 +24,6 @@ Prepify.Views.Question = Backbone.View.extend({
     answers = this.model.get('answers')
     
     ans_obj = answers[num_picked] 
-    console.log(ans_obj)
     
     if (ans_obj.correct) {
       button_text = "Next";
@@ -34,14 +33,21 @@ Prepify.Views.Question = Backbone.View.extend({
       exclamation = 'Whoops!' 
     }
     
-    var newGuessHtml = guessTemplate({exclamation: exclamation, button_text:button_text});
-    $(e.currentTarget).children().html(newGuessHtml)
+    var newGuessHtml = guessTemplate({exclamation: exclamation, button_text:button_text, correctness: ans_obj.correct});
+    
+    if ($(e.currentTarget).children().is(':empty')) {
+      $(e.currentTarget).children().html(newGuessHtml)
+    }
+
   },
   showReason: function(e) {
     console.log("reason_clicked")
+    $(e.currentTarget).text(ans_obj.explaination)
   },
   collapseAnswer: function(e) {
     console.log("try again")
+    console.log($(e.currentTarget).parent().find('.opened'))
+    $(e.currentTarget).parent().parent().find('.opened').remove()
   },
   nextQuestion: function(e) {
     console.log("next")
