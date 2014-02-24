@@ -49,6 +49,7 @@ Prepify.Views.Question = Backbone.View.extend({
   },
   nextQuestion: function(e) {
     console.log("next")
+    (this.model)
     insertQuestion(1,ans_obj.correct)
   }
 });
