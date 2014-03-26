@@ -11,18 +11,18 @@ var insertQuestion = function(level, correct) {
   // else {
   //   next_question = this_lesson.findWhere({level: level})
   // }
-  next_question = this_lesson.findWhere({level: level})  
-  //pass it to the View and render it 
+  next_question = this_lesson.findWhere({level: level})
+  //pass it to the View and render it
   question_view = new Prepify.Views.Question({model:next_question}) //
-  question_view.setElement($("#question")) 
+  question_view.setElement($("#question"))
   question_view.render()
 };
 
 $( '#get_question' ).on( "click", function(){
-  
-  
+
+
 });
 console.log("before")
 
 console.log("after")
- 
+

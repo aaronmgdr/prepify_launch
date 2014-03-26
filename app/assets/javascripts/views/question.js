@@ -18,22 +18,22 @@ Prepify.Views.Question = Backbone.View.extend({
   },
   onGuess: function (e) {
     console.log('guessed_click')
-    
-    num_picked = $(e.currentTarget).index()  
+
+    num_picked = $(e.currentTarget).index()
     answers = this.model.get('answers')
-    
-    ans_obj = answers[num_picked] 
-    
+
+    ans_obj = answers[num_picked]
+
     if (ans_obj.correct) {
       button_text = "Next";
       exclamation = 'Correct'
     } else {
       button_text = "Try Again"
-      exclamation = 'Whoops' 
+      exclamation = 'Whoops'
     }
     $(e.currentTarget).toggleClass('clicked')
     var newGuessHtml = guessTemplate({exclamation: exclamation, button_text:button_text, correctness: ans_obj.correct});
-    
+
     if ($(e.currentTarget).children().is(':empty')) {
       $(e.currentTarget).children().html(newGuessHtml)
     }
@@ -53,3 +53,5 @@ Prepify.Views.Question = Backbone.View.extend({
     insertQuestion(1,ans_obj.correct)
   }
 });
+
+
