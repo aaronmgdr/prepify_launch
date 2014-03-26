@@ -1,6 +1,6 @@
 // Get all the questions in a BB Collection
 var this_lesson = new Prepify.Collections.Questions
-this_lesson.fetch({success: function(){console.log('success'); insertQuestion(1,false)}})
+// this_lesson.fetch({success: function(){console.log('success'); insertQuestion(1,false)}})
 
 
 // determine which question to render next

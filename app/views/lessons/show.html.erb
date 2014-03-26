@@ -69,7 +69,7 @@
   $('#start_quiz').on('click', function () {
   	console.log("Click");
   	$('.lesson').remove();
-
+  	this_lesson.fetch({success: function(){console.log('success'); insertQuestion(1,false)}});
   });
 </script>
 
