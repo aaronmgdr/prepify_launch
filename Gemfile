@@ -13,7 +13,15 @@ gem 'foundation-rails', '5.0.3.1'
 gem 'pg'
 gem "underscore-rails", "~> 1.5.2"
 gem "backbone-on-rails", "~> 1.1.1.0"
+gem 'haml-rails'
+
+group :development, :test do
+  gem 'capybara'
+  gem 'rspec-rails'
+end
+
 group :development do
+  gem 'pry'
   gem 'sqlite3'
   gem 'hirb'
   gem 'better_errors'

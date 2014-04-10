@@ -17,7 +17,16 @@ class Question < ActiveRecord::Base
           correct: answer.correct,
           explanation: answer.explaination
         }
-      end 
+      end
     }
+  end
+
+  # {question: {description: "string", equation: "string", level: 1}}
+  def self.create_with_answers(parameters)
+    Question.create()
+
+    # answers.each do |a|
+    #   Answer.create()
+    # end
   end
 end
