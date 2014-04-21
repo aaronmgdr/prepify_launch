@@ -14,6 +14,7 @@ gem 'pg'
 gem "underscore-rails", "~> 1.5.2"
 gem "backbone-on-rails", "~> 1.1.1.0"
 gem "handlebars_assets"
+gem "unicorn-rails"
 group :development do
   gem 'sqlite3'
   gem 'hirb'
