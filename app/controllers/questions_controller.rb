@@ -1,9 +1,11 @@
 class QuestionsController < ApplicationController
+  layout "questions"
+
   def index
     @questions = Question.find_all_by_lesson_id(params[:lesson_id])
-    
+
     @question = @questions.first
-    
+
     respond_to do |format|
 
       format.html # index.html.erb
