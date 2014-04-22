@@ -1,5 +1,4 @@
 Prepify::Application.routes.draw do
-  root :to => "home#index"
   devise_for :users, :controllers => {:registrations => "registrations"}
   resources :users do
     resources :results
@@ -9,5 +8,6 @@ Prepify::Application.routes.draw do
     resources :questions do
     end
   end
-  
+
+  root :to => "home#index"
 end

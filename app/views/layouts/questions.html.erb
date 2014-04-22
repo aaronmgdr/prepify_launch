@@ -18,13 +18,12 @@
          <%= render 'layouts/messages' %>
          <%= yield %>
       </main>
+      <div id="push"></div>
     </div>
-
     <div class="footer-container">
        <%= render 'layouts/bottom_bar' %>
     </div>
 
-    <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
-    <%= yield :javascripts %>
+    <%= javascript_include_tag "questions", "data-turbolinks-track" => true %>
   </body>
 </html>

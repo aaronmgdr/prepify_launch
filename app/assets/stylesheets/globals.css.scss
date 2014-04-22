@@ -1,0 +1,32 @@
+//global styles
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #eee;
+}
+
+h3 {
+  color: $blue-accent;
+  font-family: $paragraph-font;
+  text-align: center;
+  &:after {
+    content: " ";
+    display: block;
+    max-width: 300px;
+    margin: 0px auto;
+    border-bottom: 2px solid $blue-accent;
+  }
+}
+
+p {
+  color:white;
+}
+
+.main-container {
+  min-height: 100%;
+  padding-bottom: 183px;
+}

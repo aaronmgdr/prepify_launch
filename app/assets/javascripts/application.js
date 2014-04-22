@@ -14,14 +14,11 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require foundation
+//= require handlebars
 //= require underscore
 //= require backbone
-//= require prepify
-//= require_tree ./models
-//= require_tree ./collections
-//= require_tree ./views
-//= require_tree ./routers
-//= require_tree .
+//= require utils
+
 $(function() {
   $(document).foundation();
 });

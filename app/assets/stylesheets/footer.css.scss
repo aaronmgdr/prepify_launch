@@ -1,8 +1,14 @@
+.footer-container {
+	clear: both;
+	position: relative;
+	z-index: 10;
+	height: 183px;
+	margin-top: -183px;
+}
+
 .footer-bar {
 	margin: 0px;
 	background-color: black;
-	position: absolute;
-	bottom: 0px;
 }
 
 .footer-links {

@@ -1,0 +1,9 @@
+$blue-accent: #31a8ac;
+$home-background: #f2f2f2;
+$light-blue: lighten($blue-accent, 20%);
+$dark-blue: darken($blue-accent, 30%);
+$paragraph-font: "Avenir";
+
+.clearfix {
+  @include clearfix();
+}
