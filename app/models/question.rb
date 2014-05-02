@@ -1,5 +1,4 @@
 class Question < ActiveRecord::Base
-  has_many :answers
   belongs_to :lesson
   has_many :results
 
@@ -17,7 +16,7 @@ class Question < ActiveRecord::Base
           correct: answer.correct,
           explanation: answer.explaination
         }
-      end 
+      end
     }
   end
 end
