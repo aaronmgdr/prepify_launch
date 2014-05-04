@@ -24,6 +24,11 @@ group :development do
   gem "spring-commands-rspec"
 end
 
+group :test do
+  gem "fabrication"
+  gem "faker"
+end
+
 group :development, :test do
   gem "pry"
   gem "pry-rails"
