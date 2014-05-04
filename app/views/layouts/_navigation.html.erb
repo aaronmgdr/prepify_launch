@@ -4,11 +4,28 @@
     <li class="name">
     	<%=link_to( image_tag("logo-home.png"), root_path) %>
     </li>
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+    <li class="toggle-topbar menu-icon"><a href="#"></a></li>
   </ul>
-  <div class="top-bar-section">
+
+  <section class="top-bar-section">
     <ul class="right">
-      <%= render 'layouts/navigation_links' %>
+
+      <li><%= link_to "Lessons", lessons_path %></li>
+      <% if user_signed_in? %>
+        <li class="has-dropdown">
+          <a href="#">Profile</a>
+          <ul class="dropdown">
+            <li><%= link_to "Edit account", edit_user_registration_path %></li>
+            <li><%= link_to "Logout", destroy_user_session_path, :method=>"delete" %></li>
+          </ul>
+      <% else %>
+        <li><%= link_to "Sign up", new_user_registration_path %></li>
+      <% end %>
+
+      <% unless user_signed_in? %>
+        <li><%= link_to "Login", new_user_session_path %></li>
+      <% end %>
+
     </ul>
-  </div>
+  </section>
 </nav>
