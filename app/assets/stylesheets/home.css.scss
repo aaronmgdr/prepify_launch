@@ -17,6 +17,7 @@
 		margin: auto;
 		text-align: center;
 		border: 1px solid white;
+		color: white;
 
 		&:after {
 			content: " ";
@@ -37,7 +38,6 @@
 // video section
 
 .splash-video {
-	color: white;
 	border-bottom: 1px solid gray;
 	border-top: 20px solid $blue-accent;
 

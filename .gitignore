@@ -10,7 +10,7 @@
 # http://github.com/RailsApps/rails-composer/issues
 #----------------------------------------------------------------------------
 
-# DB stuff that Joe's added 
+# DB stuff that Joe's added
 /Gemmfile
 /Gemfile.lock
 /config/config.yml
@@ -22,6 +22,7 @@
 /.bundle
 /vendor/bundle/
 /vendor/ruby/
+.ruby-version
 
 # minimal Rails specific artifacts
 db/*.sqlite3

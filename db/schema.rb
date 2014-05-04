@@ -11,21 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140222182955) do
+ActiveRecord::Schema.define(version: 20140504032919) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "answers", force: true do |t|
-    t.string   "value"
-    t.boolean  "correct"
-    t.text     "explaination"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "question_id"
-  end
-
-  add_index "answers", ["question_id"], name: "index_answers_on_question_id", using: :btree
 
   create_table "lessons", force: true do |t|
     t.string   "name"
@@ -43,6 +32,7 @@ ActiveRecord::Schema.define(version: 20140222182955) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "lesson_id"
+    t.json     "answers"
   end
 
   add_index "questions", ["lesson_id"], name: "index_questions_on_lesson_id", using: :btree
@@ -61,6 +51,11 @@ ActiveRecord::Schema.define(version: 20140222182955) do
   add_index "results", ["question_id"], name: "index_results_on_question_id", using: :btree
   add_index "results", ["user_id"], name: "index_results_on_user_id", using: :btree
 
+  create_table "tests", force: true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -74,7 +69,8 @@ ActiveRecord::Schema.define(version: 20140222182955) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "name"
+    t.string   "username"
+    t.boolean  "admin"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
