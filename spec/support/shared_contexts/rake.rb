@@ -11,6 +11,8 @@
 #
 # to run the rake task
 # rake_task.invoke
+#
+# Got code from: http://robots.thoughtbot.com/test-rake-tasks-like-a-boss
 
 require "rake"
 
