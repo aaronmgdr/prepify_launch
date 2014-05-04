@@ -22,3 +22,5 @@
 $(function() {
   $(document).foundation();
 });
+
+Turbolinks.enableTransitionCache();
