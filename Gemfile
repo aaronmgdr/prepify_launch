@@ -16,6 +16,10 @@ gem "underscore-rails", "~> 1.5.2"
 gem "backbone-on-rails", "~> 1.1.1.0"
 gem "handlebars_assets"
 gem "unicorn-rails"
+
+# Engines
+gem "admin", :path => "app/engines/admin"
+
 group :development do
   gem "hirb"
   gem "better_errors"

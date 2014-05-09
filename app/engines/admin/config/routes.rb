@@ -1,3 +1,3 @@
 Admin::Engine.routes.draw do
-  root :to => "admins#dashboard"
+  root to: "dashboards#index"
 end
