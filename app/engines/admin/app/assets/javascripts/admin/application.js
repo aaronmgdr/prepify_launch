@@ -22,4 +22,3 @@
 $(function() {
   $(document).foundation();
 });
-

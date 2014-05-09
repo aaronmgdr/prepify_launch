@@ -1,4 +1,5 @@
 Prepify::Application.routes.draw do
+  mount Admin::Engine, at: "admin"
   devise_for :users, :controllers => {:registrations => "registrations"}
 
   resources :lessons do
