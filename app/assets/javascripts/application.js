@@ -14,13 +14,12 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require foundation
-//= require handlebars
 //= require underscore
 //= require backbone
+//= require handlebars
 //= require utils
 
 $(function() {
   $(document).foundation();
 });
 
-Turbolinks.enableTransitionCache();
