@@ -5,4 +5,7 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   has_many :results
+
+  validate :username, :uniqueness => true
+  validates_presence_of :username
 end

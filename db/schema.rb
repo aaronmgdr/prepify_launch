@@ -11,10 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140504032919) do
+ActiveRecord::Schema.define(version: 20140509234306) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "answers", force: true do |t|
+    t.text     "value"
+    t.boolean  "correct"
+    t.text     "explaination"
+    t.integer  "question_id"
+    t.integer  "result_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "lessons", force: true do |t|
     t.string   "name"
@@ -32,7 +42,6 @@ ActiveRecord::Schema.define(version: 20140504032919) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "lesson_id"
-    t.json     "answers"
   end
 
   add_index "questions", ["lesson_id"], name: "index_questions_on_lesson_id", using: :btree
@@ -40,14 +49,12 @@ ActiveRecord::Schema.define(version: 20140504032919) do
   create_table "results", force: true do |t|
     t.integer  "user_id"
     t.integer  "question_id"
-    t.integer  "answer_id"
     t.boolean  "correct"
     t.time     "duration"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "results", ["answer_id"], name: "index_results_on_answer_id", using: :btree
   add_index "results", ["question_id"], name: "index_results_on_question_id", using: :btree
   add_index "results", ["user_id"], name: "index_results_on_user_id", using: :btree
 
@@ -70,5 +77,6 @@ ActiveRecord::Schema.define(version: 20140504032919) do
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["username"], name: "index_users_on_username", unique: true, using: :btree
 
 end
