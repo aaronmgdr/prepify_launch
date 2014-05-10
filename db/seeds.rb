@@ -8,10 +8,9 @@ and right triangles. ")
 
 question = Question.create(equation:"2x + 4 = 10", level: 1, description: "Solve for x")
 
-question.answers = {
-  possible: [ "3", "4", "5", "10" ],
-  "4" => "You added it together, but I think you're missing something",
-  "3" => "correct"
-}
-question.lesson_id = algebra.id
-question.save
+question.answers.create(value: "2", explaination: "Nope this is wrong, learn math plz", correct: false)
+question.answers.create(value: "3", explaination: "Oh you so good!", correct: true)
+question.answers.create(value: "79", explaination: "Nope this is wrong, learn math plz", correct: false)
+question.answers.create(value: ".5", explaination: "Nope this is wrong, learn math plz", correct: false)
+
+
