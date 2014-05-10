@@ -7,4 +7,5 @@ class User < ActiveRecord::Base
   has_many :results
 
   validate :username, :uniqueness => true
+  validates_presence_of :username
 end
